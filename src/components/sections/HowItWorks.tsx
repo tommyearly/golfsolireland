@@ -70,7 +70,7 @@ export function HowItWorks() {
               aria-hidden
             />
             <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10 text-white">
-              <span className="text-sm font-bold tracking-widest uppercase text-yellow/95">
+              <span className="text-base font-bold tracking-widest uppercase text-yellow/95">
                 Simple as 1–2–3–4
               </span>
               <h2
@@ -79,7 +79,7 @@ export function HowItWorks() {
               >
                 Plan your golf trip
               </h2>
-              <p className="mt-2 text-sm md:text-base text-white/90 max-w-xl">
+              <p className="mt-2 text-base md:text-base text-white/90 max-w-xl">
                 Choose your dates. We suggest Costa del Sol courses and
                 accommodation. You receive a custom itinerary. Then you fly and
                 play.
@@ -120,7 +120,7 @@ export function HowItWorks() {
                     <h3 className="font-display font-bold text-primary text-base uppercase leading-snug">
                       {step.title}
                     </h3>
-                    <p className="mt-2 text-sm text-muted flex-1">
+                    <p className="mt-2 text-base text-muted flex-1">
                       {STEP_SUBTITLES[step.number]}
                     </p>
                   </div>

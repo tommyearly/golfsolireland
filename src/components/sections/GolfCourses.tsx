@@ -73,7 +73,7 @@ export function GolfCourses() {
               {/* Decorative "70+" badge */}
               <div className="absolute top-4 left-4 lg:left-0 bg-primary text-white px-4 py-2 rounded-lg shadow-card z-20">
                 <span className="font-display font-black text-2xl leading-none">70+</span>
-                <span className="block text-[10px] uppercase tracking-wider font-semibold opacity-90">courses</span>
+                <span className="block text-base uppercase tracking-wider font-semibold opacity-95">courses</span>
               </div>
             </div>
           </div>
@@ -96,17 +96,17 @@ export function GolfCourses() {
                     </svg>
                   </span>
                   <div className="min-w-0 flex-1">
-                    <p className="font-display font-semibold text-primary text-sm md:text-base">
+                    <p className="font-display font-semibold text-primary text-base md:text-base">
                       {c.name}
                     </p>
-                    <p className="text-sm text-muted mt-1 leading-relaxed">
+                    <p className="text-base text-muted mt-1 leading-relaxed">
                       {c.description}
                     </p>
                   </div>
                 </div>
               ))}
             </div>
-            <p className="text-sm text-muted mb-6">
+            <p className="text-base text-muted mb-6">
               …and many more. Tell us your dates and we&apos;ll suggest the best fit.
             </p>
             <Button href="#contact" variant="primary" size="md">

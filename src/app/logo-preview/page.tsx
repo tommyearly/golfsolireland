@@ -27,7 +27,7 @@ export default function LogoPreviewPage() {
     <div className="min-h-screen bg-background text-neutral-foreground">
       <div className="max-w-4xl mx-auto px-6 py-12">
         <div className="flex items-center justify-between mb-10">
-          <Link href="/" className="text-primary hover:underline text-sm">
+          <Link href="/" className="text-primary hover:underline text-base">
             ← Back to home
           </Link>
           <ThemeToggle />
@@ -41,7 +41,7 @@ export default function LogoPreviewPage() {
             <section key={id} className="space-y-4">
               <div>
                 <h2 className="text-lg font-semibold text-primary">{label}</h2>
-                <p className="text-sm text-muted">{description}</p>
+                <p className="text-base text-muted">{description}</p>
               </div>
               <div className="p-8 rounded-xl bg-background-elevated border border-border flex flex-wrap items-center justify-center gap-6 min-h-[140px]">
                 <Logo variant="header" concept={id} asLink={false} />
@@ -49,7 +49,7 @@ export default function LogoPreviewPage() {
             </section>
           ))}
         </div>
-        <p className="mt-12 text-sm text-muted">
+        <p className="mt-12 text-base text-muted">
           Use any concept in Header/Footer: <code className="bg-neutral-200 dark:bg-neutral-700 px-1 rounded">concept=&quot;neon&quot;</code>,{' '}
           <code className="bg-neutral-200 dark:bg-neutral-700 px-1 rounded">concept=&quot;stacked&quot;</code>, etc.
         </p>

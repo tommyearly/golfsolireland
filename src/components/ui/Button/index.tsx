@@ -49,9 +49,9 @@ const variants: Record<ButtonVariant, string> = {
 };
 
 const sizes: Record<ButtonSize, string> = {
-  xs: 'text-xs py-2 px-3 min-h-[32px] min-w-[32px]',
-  sm: 'text-xs py-2.5 px-5 min-h-[40px] min-w-[40px]',
-  md: 'text-sm py-3 px-7 min-h-[44px] min-w-[44px]',
+  xs: 'text-base py-2.5 px-4 min-h-[44px] min-w-[44px]',
+  sm: 'text-base py-2.5 px-5 min-h-[44px] min-w-[44px]',
+  md: 'text-base py-3 px-7 min-h-[44px] min-w-[44px]',
   lg: 'text-base py-3.5 px-8 min-h-[48px] min-w-[48px]',
   xl: 'text-lg py-4 px-10 min-h-[52px] min-w-[52px]',
 };

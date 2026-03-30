@@ -14,11 +14,11 @@ export default function ProfilePage() {
         </p>
         <div className="mt-10 p-8 bg-background-elevated dark:bg-neutral-200 rounded-xl border border-neutral-200 dark:border-neutral-600 space-y-6">
           <div>
-            <span className="block text-sm font-light text-neutral-500 dark:text-neutral-400">Name</span>
+            <span className="block text-base font-light text-neutral-500 dark:text-neutral-400">Name</span>
             <span className="text-lg text-neutral-900 dark:text-neutral-100">—</span>
           </div>
           <div>
-            <span className="block text-sm font-light text-neutral-500 dark:text-neutral-400">Email</span>
+            <span className="block text-base font-light text-neutral-500 dark:text-neutral-400">Email</span>
             <span className="text-lg text-neutral-900 dark:text-neutral-100">—</span>
           </div>
         </div>

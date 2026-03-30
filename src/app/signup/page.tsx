@@ -78,12 +78,12 @@ export default function SignupPage() {
             Create account
           </Button>
           {status === 'success' && (
-            <p className="p-4 rounded-lg bg-success/10 text-success text-sm dark:text-success-foreground dark:bg-success/20" role="status">
+            <p className="p-4 rounded-lg bg-success/10 text-success text-base dark:text-success-foreground dark:bg-success/20" role="status">
               Account created. You can now <Link href="/login" className="underline font-semibold">sign in</Link>.
             </p>
           )}
           {status === 'error' && errorMessage && (
-            <p className="p-4 rounded-lg bg-error/10 text-error text-sm" role="alert">
+            <p className="p-4 rounded-lg bg-error/10 text-error text-base" role="alert">
               {errorMessage}
             </p>
           )}

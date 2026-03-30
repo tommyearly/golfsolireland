@@ -67,17 +67,17 @@
   --wave-stroke-primary: rgba(255,255,255,0.5);
   --wave-stroke-surface-alt: rgba(26,46,26,0.25);
 
-  /* ----- Typography: Scale ----- */
-  --font-size-xs: 0.6875rem;   /* 11px */
-  --font-size-sm: 0.75rem;     /* 12px */
-  --font-size-base: 0.9375rem; /* 15px */
-  --font-size-md: 1rem;
-  --font-size-lg: 1.125rem;
-  --font-size-xl: 1.25rem;
-  --font-size-2xl: 1.5rem;
-  --font-size-3xl: 1.875rem;
-  --font-size-4xl: 2.25rem;
-  --font-size-5xl: 3rem;
+  /* ----- Typography: Fluid mobile-first scale ----- */
+  --font-size-xs: clamp(0.875rem, 0.82rem + 0.2vw, 0.95rem);
+  --font-size-sm: clamp(1rem, 0.95rem + 0.3vw, 1.1rem);
+  --font-size-base: clamp(1rem, 0.95rem + 0.4vw, 1.125rem);
+  --font-size-md: clamp(1.0625rem, 1rem + 0.5vw, 1.2rem);
+  --font-size-lg: clamp(1.125rem, 1rem + 0.6vw, 1.35rem);
+  --font-size-xl: clamp(1.25rem, 1.1rem + 0.8vw, 1.6rem);
+  --font-size-2xl: clamp(1.5rem, 1.3rem + 1vw, 2rem);
+  --font-size-3xl: clamp(1.875rem, 1.6rem + 1.5vw, 2.5rem);
+  --font-size-4xl: clamp(2.25rem, 2rem + 2vw, 3.25rem);
+  --font-size-5xl: clamp(2.75rem, 2.4rem + 2.4vw, 4rem);
 
   /* ----- Typography: Line height ----- */
   --line-height-tight: 1.05;

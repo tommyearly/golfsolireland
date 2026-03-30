@@ -60,12 +60,12 @@ export default function ForgotPasswordPage() {
             Send reset link
           </Button>
           {status === 'success' && (
-            <p className="p-4 rounded-lg bg-success/10 text-success text-sm dark:text-success-foreground dark:bg-success/20" role="status">
+            <p className="p-4 rounded-lg bg-success/10 text-success text-base dark:text-success-foreground dark:bg-success/20" role="status">
               If an account exists for that email, we&apos;ve sent a reset link. Check your inbox.
             </p>
           )}
           {status === 'error' && errorMessage && (
-            <p className="p-4 rounded-lg bg-error/10 text-error text-sm" role="alert">
+            <p className="p-4 rounded-lg bg-error/10 text-error text-base" role="alert">
               {errorMessage}
             </p>
           )}

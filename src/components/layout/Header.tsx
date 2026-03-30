@@ -104,7 +104,7 @@ export function Header() {
             open && 'max-md:flex'
           )}
         >
-          <ul className="hidden md:flex md:items-center md:gap-3 lg:gap-4 text-[15px] font-semibold text-primary dark:text-white">
+          <ul className="hidden md:flex md:items-center md:gap-3 lg:gap-4 text-base font-semibold text-primary dark:text-white">
             {NAV_ITEMS.map((item) => (
               <li key={item.href}>
                 <Link
@@ -121,7 +121,7 @@ export function Header() {
           <div className="hidden md:flex md:items-center md:gap-3 md:flex-shrink-0 md:pl-2">
             <Link
               href="/#contact"
-              className="inline-flex items-center justify-center min-h-[44px] px-6 py-2.5 rounded-lg text-sm font-bold tracking-wide bg-primary text-primary-foreground hover:bg-primary-400 dark:hover:bg-primary-300 transition-colors duration-200 shadow-sm hover:shadow-md"
+              className="inline-flex items-center justify-center min-h-[44px] px-6 py-2.5 rounded-lg text-base font-bold tracking-wide bg-primary text-primary-foreground hover:bg-primary-400 dark:hover:bg-primary-300 transition-colors duration-200 shadow-sm hover:shadow-md"
               onClick={closeMenu}
             >
               Enquire
@@ -145,7 +145,7 @@ export function Header() {
             <li className="pt-4 flex gap-3">
               <Link
                 href="/#contact"
-                className="flex-1 inline-flex items-center justify-center min-h-[48px] rounded-lg text-sm font-bold bg-primary text-primary-foreground"
+                className="flex-1 inline-flex items-center justify-center min-h-[48px] rounded-lg text-base font-bold bg-primary text-primary-foreground"
                 onClick={closeMenu}
               >
                 Enquire

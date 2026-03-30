@@ -62,11 +62,11 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-20">
           {footerLinks.map((block) => (
             <div key={block.heading}>
-              <h3 className="text-sm font-bold uppercase tracking-wider text-white mb-4">
+              <h3 className="text-base font-bold uppercase tracking-wider text-white mb-4">
                 {block.heading}
               </h3>
               {'links' in block ? (
-                <ul className="space-y-2 text-sm text-white/90">
+                <ul className="space-y-2 text-base text-white/90">
                   {(block.links as { label: string; href: string }[]).map((link) => (
                     <li key={link.href}>
                       <Link
@@ -80,11 +80,11 @@ export function Footer() {
                 </ul>
               ) : (
                 <>
-                  <p className="text-sm text-white/90">{block.content}</p>
+                  <p className="text-base text-white/90">{block.content}</p>
                   {'phone' in block && block.phone && (
                     <a
                       href={`tel:${block.phone}`}
-                      className="mt-2 inline-block text-white/90 text-sm hover:text-white transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
+                      className="mt-2 inline-block text-white/90 text-base hover:text-white transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2"
                     >
                       {'phoneDisplay' in block && block.phoneDisplay ? block.phoneDisplay : block.phone}
                     </a>
@@ -95,7 +95,7 @@ export function Footer() {
           ))}
         </div>
         <div className="mt-20 pt-10 border-t border-white/20 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
-          <p className="text-white/70 text-xs">
+          <p className="text-white/70 text-base">
             © {new Date().getFullYear()} {SITE_NAME}
           </p>
           <nav aria-label="Social media">

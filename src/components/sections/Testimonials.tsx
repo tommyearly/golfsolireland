@@ -64,7 +64,7 @@ export function Testimonials() {
                 </div>
                 <div>
                   <cite className="not-italic font-bold text-primary">{t.author}</cite>
-                  <p className="text-sm text-muted">{t.location}</p>
+                  <p className="text-base text-muted">{t.location}</p>
                 </div>
               </footer>
             </blockquote>

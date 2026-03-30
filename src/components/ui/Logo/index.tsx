@@ -70,8 +70,8 @@ const WORDMARK_SIZE = {
 } as const;
 
 const IRELAND_SIZE = {
-  header: 'max-md:text-xl text-sm sm:text-base md:text-lg',
-  footer: 'text-sm sm:text-base md:text-lg',
+  header: 'max-md:text-xl text-base sm:text-base md:text-lg',
+  footer: 'text-base sm:text-base md:text-lg',
   hero: 'text-lg md:text-xl lg:text-2xl',
 } as const;
 
@@ -82,9 +82,9 @@ const SHAMROCK_SIZE = {
 } as const;
 
 const TAGLINE_SIZE = {
-  header: 'text-[11px] md:text-xs',
-  footer: 'text-[11px] md:text-xs',
-  hero: 'text-sm md:text-base',
+  header: 'text-base md:text-base',
+  footer: 'text-base md:text-base',
+  hero: 'text-base md:text-base',
 } as const;
 
 export function Logo({

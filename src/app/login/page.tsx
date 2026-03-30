@@ -70,14 +70,14 @@ export default function LoginPage() {
             required
             disabled={status === 'loading'}
           />
-          <Link href="/forgot-password" className="block text-sm text-primary dark:text-yellow hover:underline">
+          <Link href="/forgot-password" className="block text-base text-primary dark:text-yellow hover:underline">
             Forgot password?
           </Link>
           <Button type="submit" variant="primary" size="md" disabled={status === 'loading'} loading={status === 'loading'}>
             Sign in
           </Button>
           {status === 'error' && errorMessage && (
-            <p id="login-error" className="p-4 rounded-lg bg-error/10 text-error text-sm" role="alert">
+            <p id="login-error" className="p-4 rounded-lg bg-error/10 text-error text-base" role="alert">
               {errorMessage}
             </p>
           )}
