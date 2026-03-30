@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { ACCOMMODATIONS } from '@/lib/constants';
 import { Container } from '@/components/layout/Container';
 import { Button } from '@/components/ui/Button';
+import { BookingTrustMicrocopy } from '@/components/ui/BookingTrustMicrocopy';
 import { SectionWave } from '@/components/ui/SectionWave';
 
 export function Accommodation() {
@@ -65,6 +66,7 @@ export function Accommodation() {
           <Button href="#contact" variant="outline" size="md">
             See where you&apos;ll stay — get a quote
           </Button>
+          <BookingTrustMicrocopy align="center" className="mx-auto max-w-2xl" />
         </div>
       </Container>
       <SectionWave variant="surfaceAlt" />

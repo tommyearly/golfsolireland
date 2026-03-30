@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { Container } from '@/components/layout/Container';
 import { Button } from '@/components/ui/Button';
+import { BookingTrustMicrocopy } from '@/components/ui/BookingTrustMicrocopy';
 import { SectionWave } from '@/components/ui/SectionWave';
 
 /* SVG icons — dark green, used in step cards */
@@ -74,6 +75,7 @@ export function GolfPackages() {
             <Button href="#contact" variant="primary" size="md">
               Enquire now
             </Button>
+            <BookingTrustMicrocopy className="max-w-xl" />
           </div>
           {/* Design your golf package — simple cards, no step branding */}
           <div className="reveal reveal-delay-1">

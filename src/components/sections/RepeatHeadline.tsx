@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { Button } from '@/components/ui/Button';
+import { BookingTrustMicrocopy } from '@/components/ui/BookingTrustMicrocopy';
 import { Container } from '@/components/layout/Container';
 import { SectionWave } from '@/components/ui/SectionWave';
 
@@ -47,6 +48,7 @@ export function RepeatHeadline() {
           <Button href="#contact" variant="primary" size="md">
             Enquire now
           </Button>
+          <BookingTrustMicrocopy className="max-w-xl" />
         </div>
 
         {/* Editorial-style image collage: overlapping tilted frames + badge */}

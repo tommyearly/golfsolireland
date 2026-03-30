@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { CONTACT, SITE_NAME, SOCIAL_LINKS } from '@/lib/constants';
 import { Logo } from '@/components/ui/Logo';
+import { FOOTER_TRUST_ITEMS } from '@/lib/trust';
+import { TrustIcon } from '@/components/ui/TrustIcons';
 
 const SocialIcon = ({ icon }: { icon: string }) => {
   const className = 'w-5 h-5';
@@ -59,6 +61,23 @@ export function Footer() {
         <div className="mb-12">
           <Logo variant="footer" concept="irish-script" />
         </div>
+        <section aria-label="Trust assurances" className="mb-12 md:mb-14">
+          <ul className="grid grid-cols-1 gap-3 sm:grid-cols-3 sm:gap-4">
+            {FOOTER_TRUST_ITEMS.map((item) => (
+              <li key={item.id}>
+                <div className="flex min-h-[56px] items-center gap-3 rounded-xl border border-white/20 bg-white/5 px-4 py-3">
+                  <TrustIcon
+                    name={item.icon}
+                    className="h-8 w-8 bg-white/15 text-white text-sm"
+                  />
+                  <p className="text-xs md:text-sm font-semibold tracking-wide text-white/95">
+                    {item.label}
+                  </p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-20">
           {footerLinks.map((block) => (
             <div key={block.heading}>

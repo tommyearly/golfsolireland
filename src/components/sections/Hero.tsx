@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/Button';
+import { BookingTrustMicrocopy } from '@/components/ui/BookingTrustMicrocopy';
 import { Container } from '@/components/layout/Container';
 import { SectionWave } from '@/components/ui/SectionWave';
 
@@ -84,6 +85,7 @@ export function Hero() {
                 Design your package
               </Button>
             </div>
+            <BookingTrustMicrocopy className="max-w-xl" />
           </div>
 
           <div className="reveal visible reveal-delay-1 flex justify-center items-center relative">
