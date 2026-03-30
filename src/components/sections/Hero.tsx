@@ -73,7 +73,7 @@ export function Hero() {
               <span className="hero-headline-word">golf</span>{' '}
               <span className="hero-headline-word">holiday</span>
             </h1>
-            <span className="hero-subline hero-subline-shine font-script text-2xl md:text-[28px] block mb-9">
+            <span className="hero-subline hero-subline-shine font-script text-2xl md:text-3xl block mb-9">
               Costa del Sol only · Irish golfers · No hassle
             </span>
             <div className="flex flex-wrap gap-4">

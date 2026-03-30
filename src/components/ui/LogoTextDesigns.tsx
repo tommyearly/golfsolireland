@@ -164,7 +164,7 @@ export function LogoTextDesigns() {
         <section key={id} className="space-y-4">
           <div>
             <h2 className="text-lg font-semibold text-primary">{label}</h2>
-            <p className="text-sm text-muted">{description}</p>
+            <p className="text-base text-muted">{description}</p>
           </div>
           <div className="p-8 rounded-xl bg-background-elevated border border-border flex flex-wrap items-center justify-center min-h-[120px]">
             {children}

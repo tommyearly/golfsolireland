@@ -50,8 +50,8 @@ function SingleToast({ toast }: { toast: ToastType }) {
     >
       <Icon type={toast.type} />
       <div className="flex-1 min-w-0">
-        {toast.title && <p className="font-semibold text-sm">{toast.title}</p>}
-        {toast.description && <p className={cn('text-sm opacity-95', toast.title && 'mt-0.5')}>{toast.description}</p>}
+        {toast.title && <p className="font-semibold text-base">{toast.title}</p>}
+        {toast.description && <p className={cn('text-base opacity-95', toast.title && 'mt-0.5')}>{toast.description}</p>}
       </div>
       <button
         type="button"

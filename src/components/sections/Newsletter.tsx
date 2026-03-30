@@ -64,14 +64,14 @@ export function Newsletter() {
               </div>
               <div className="absolute -bottom-4 -right-4 lg:right-0 bg-yellow text-primary px-5 py-3 rounded-xl shadow-card border-2 border-white">
                 <span className="font-display font-black text-2xl leading-none block">Deals</span>
-                <span className="text-xs font-bold uppercase tracking-wider opacity-90">& early tips</span>
+                <span className="text-base font-bold uppercase tracking-wider opacity-90">& early tips</span>
               </div>
             </div>
           </div>
 
           {/* Right: copy + form card */}
           <div className="reveal order-1 lg:order-2">
-            <span className="inline-block px-4 py-1.5 rounded-full bg-yellow/90 text-primary text-xs font-bold uppercase tracking-wider mb-5">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-yellow/90 text-primary text-base font-bold uppercase tracking-wider mb-5">
               Exclusive for Irish golfers
             </span>
             <h2 id="newsletter-heading" className="section-title text-white">
@@ -81,7 +81,7 @@ export function Newsletter() {
             <p className="mt-4 font-script text-xl md:text-2xl text-yellow">
               Join our newsletter — no spam, just early access.
             </p>
-            <ul className="mt-6 space-y-2 text-cream text-sm">
+            <ul className="mt-6 space-y-2 text-cream text-base">
               <li className="flex items-center gap-2">
                 <span className="text-yellow" aria-hidden>✓</span> New courses & seasonal rates
               </li>
@@ -100,7 +100,7 @@ export function Newsletter() {
                 noValidate
               >
                 <div className="flex-1 min-w-0 flex flex-col gap-2">
-                  <label htmlFor="newsletter-email" className="text-sm font-semibold text-white">
+                  <label htmlFor="newsletter-email" className="text-base font-semibold text-white">
                     Email address
                   </label>
                   <input
@@ -110,11 +110,11 @@ export function Newsletter() {
                     disabled={status === 'loading'}
                     aria-invalid={!!errors.email}
                     aria-describedby={errors.email ? 'newsletter-email-error' : undefined}
-                    className="w-full rounded-lg border-2 border-white/30 bg-white px-4 py-3.5 text-[15px] text-primary placeholder:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-yellow focus:border-yellow transition-colors disabled:opacity-60"
+                    className="w-full rounded-lg border-2 border-white/30 bg-white px-4 py-3.5 text-base text-primary placeholder:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-yellow focus:border-yellow transition-colors disabled:opacity-60"
                     {...register('email')}
                   />
                   {errors.email?.message && (
-                    <p id="newsletter-email-error" className="text-sm text-yellow" role="alert">
+                    <p id="newsletter-email-error" className="text-base text-yellow" role="alert">
                       {errors.email.message}
                     </p>
                   )}

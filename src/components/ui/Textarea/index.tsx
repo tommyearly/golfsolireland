@@ -72,12 +72,12 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
       <div className="space-y-1">
         <label
           htmlFor={textareaId}
-          className="block text-sm font-semibold uppercase tracking-wide text-neutral-800 dark:text-neutral-200"
+          className="block text-base font-semibold uppercase tracking-wide text-neutral-800 dark:text-neutral-200"
         >
           {label}
           {required && <span className="text-error ml-0.5" aria-hidden>*</span>}
           {optional && (
-            <span className="ml-1.5 text-neutral-500 font-normal normal-case text-xs" aria-hidden>
+            <span className="ml-1.5 text-neutral-500 font-normal normal-case text-base" aria-hidden>
               (optional)
             </span>
           )}
@@ -104,18 +104,18 @@ export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
           <div className="flex justify-between items-start gap-2">
             <div>
               {error && (
-                <p id={errorId} className="text-sm text-error" role="alert">
+                <p id={errorId} className="text-base text-error" role="alert">
                   {error}
                 </p>
               )}
               {helperText && !error && (
-                <p id={helperId} className="text-sm text-neutral-500 dark:text-neutral-400">
+                <p id={helperId} className="text-base text-neutral-500 dark:text-neutral-400">
                   {helperText}
                 </p>
               )}
             </div>
             {showCount && maxLength !== undefined && (
-              <span className="text-xs text-neutral-500 shrink-0" aria-live="polite">
+              <span className="text-base text-neutral-500 shrink-0" aria-live="polite">
                 {currentLength}/{maxLength}
               </span>
             )}

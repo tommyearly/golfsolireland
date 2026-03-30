@@ -119,8 +119,8 @@ export function ContactSection() {
               </div>
             </div>
             <div className="mt-8 space-y-2">
-              <p className="text-primary font-semibold uppercase text-sm">{CONTACT.name}</p>
-              <p className="text-muted text-sm">{CONTACT.companyName}</p>
+              <p className="text-primary font-semibold uppercase text-base">{CONTACT.name}</p>
+              <p className="text-muted text-base">{CONTACT.companyName}</p>
               <p className="text-muted text-base">
                 <a href={`tel:${CONTACT.phoneE164}`} className="text-primary hover:underline hover:text-muted font-semibold">{CONTACT.phone}</a>
                 {' '}({CONTACT.phoneE164})

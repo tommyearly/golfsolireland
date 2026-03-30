@@ -92,10 +92,10 @@ export function GolfPackages() {
                     <item.Icon />
                   </span>
                   <div className="min-w-0 flex-1">
-                    <p className="font-display font-semibold text-primary text-sm md:text-base">
+                    <p className="font-display font-semibold text-primary text-base md:text-base">
                       {item.title}
                     </p>
-                    <p className="text-sm text-muted mt-0.5">
+                    <p className="text-base text-muted mt-0.5">
                       {item.subtitle}
                     </p>
                   </div>

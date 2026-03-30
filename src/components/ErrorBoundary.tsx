@@ -32,7 +32,7 @@ export class ErrorBoundary extends Component<Props, State> {
           <p className="text-muted max-w-md">We&apos;ve been notified. Please try again or return home.</p>
           <Link
             href="/"
-            className="inline-flex items-center justify-center min-h-[44px] px-6 py-3 rounded-lg bg-primary text-primary-foreground font-bold text-sm uppercase"
+            className="inline-flex items-center justify-center min-h-[44px] px-6 py-3 rounded-lg bg-primary text-primary-foreground font-bold text-base uppercase"
           >
             Go home
           </Link>

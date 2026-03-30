@@ -39,7 +39,7 @@ export function Accommodation() {
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-normal" aria-hidden />
-                <span className="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/95 text-primary text-xs font-bold uppercase tracking-wider shadow-sm">
+                <span className="absolute top-4 left-4 px-3 py-1 rounded-full bg-white/95 text-primary text-base font-bold uppercase tracking-wider shadow-sm">
                   {acc.title}
                 </span>
               </div>
@@ -47,12 +47,12 @@ export function Accommodation() {
                 <h3 className="font-display font-bold text-primary text-lg uppercase tracking-tight">
                   {acc.title}
                 </h3>
-                <p className="mt-3 text-sm text-muted leading-relaxed">
+                <p className="mt-3 text-base text-muted leading-relaxed">
                   {acc.description}
                 </p>
                 <Link
                   href="#contact"
-                  className="mt-5 inline-block text-sm font-bold uppercase text-primary tracking-wider hover:text-muted transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                  className="mt-5 inline-block text-base font-bold uppercase text-primary tracking-wider hover:text-muted transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                   aria-label={`Enquire about ${acc.title}`}
                 >
                   Enquire →

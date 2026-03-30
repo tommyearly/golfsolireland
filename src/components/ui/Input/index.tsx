@@ -77,14 +77,14 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
         <label
           htmlFor={inputId}
           className={cn(
-            'block text-sm font-semibold uppercase tracking-wide text-neutral-800 dark:text-neutral-200',
+            'block text-base font-semibold uppercase tracking-wide text-neutral-800 dark:text-neutral-200',
             labelClassName
           )}
         >
           {label}
           {required && <span className="text-error ml-0.5" aria-hidden>*</span>}
           {optional && (
-            <span className="ml-1.5 text-neutral-500 font-normal normal-case text-xs" aria-hidden>
+            <span className="ml-1.5 text-neutral-500 font-normal normal-case text-base" aria-hidden>
               (optional)
             </span>
           )}
@@ -131,12 +131,12 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
           )}
         </div>
         {error && (
-          <p id={errorId} className={cn('text-sm text-error', errorClassName)} role="alert">
+          <p id={errorId} className={cn('text-base text-error', errorClassName)} role="alert">
             {error}
           </p>
         )}
         {helperText && !error && (
-          <p id={helperId} className="text-sm text-neutral-500 dark:text-neutral-400">
+          <p id={helperId} className="text-base text-neutral-500 dark:text-neutral-400">
             {helperText}
           </p>
         )}
