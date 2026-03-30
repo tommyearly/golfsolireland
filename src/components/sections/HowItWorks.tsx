@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { STEPS } from '@/lib/constants';
 import { Button } from '@/components/ui/Button';
+import { BookingTrustMicrocopy } from '@/components/ui/BookingTrustMicrocopy';
 import { Container } from '@/components/layout/Container';
 import { SectionWave } from '@/components/ui/SectionWave';
 
@@ -136,6 +137,7 @@ export function HowItWorks() {
               Enquire now
             </Button>
           </Link>
+          <BookingTrustMicrocopy align="center" className="mx-auto max-w-2xl" />
         </div>
       </Container>
       <SectionWave variant="cream" />

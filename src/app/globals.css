@@ -74,6 +74,81 @@ body {
 .reveal-delay-2 { transition-delay: 0.16s; }
 .reveal-delay-3 { transition-delay: 0.24s; }
 
+/* Trust badge bar: premium hover lift + soft glow */
+.trust-badge-item {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.trust-badge-item:hover {
+  transform: translateY(-3px);
+  border-color: rgba(18, 56, 17, 0.16);
+  background-color: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 8px 24px rgba(18, 56, 17, 0.12), 0 0 0 1px rgba(18, 56, 17, 0.08);
+}
+
+/* Dedicated trust section: soft fade-in when revealed */
+.trust-service-fade.visible {
+  animation: trust-service-fade-in 0.85s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes trust-service-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.985);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+/* Premium emphasis for "Irish Owned & Operated" */
+.irish-owned-glow {
+  position: relative;
+  display: inline-block;
+  text-shadow: 0 0 18px rgba(18, 56, 17, 0.12);
+}
+
+.irish-owned-glow::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.1em;
+  width: 100%;
+  height: 0.11em;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(18, 56, 17, 0.12), rgba(18, 56, 17, 0.55), rgba(18, 56, 17, 0.12));
+  transform-origin: center;
+  animation: irish-underline-glow 3.6s ease-in-out infinite;
+}
+
+@keyframes irish-underline-glow {
+  0%, 100% {
+    opacity: 0.65;
+    transform: scaleX(0.94);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .trust-badge-item,
+  .trust-service-fade.visible,
+  .irish-owned-glow::after {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+}
+
 /* Image zoom */
 .img-zoom {
   transition: transform 0.4s ease;

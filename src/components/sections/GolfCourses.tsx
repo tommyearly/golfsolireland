@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { COURSES } from '@/lib/constants';
 import { Button } from '@/components/ui/Button';
+import { BookingTrustMicrocopy } from '@/components/ui/BookingTrustMicrocopy';
 import { Container } from '@/components/layout/Container';
 import { SectionWave } from '@/components/ui/SectionWave';
 
@@ -112,6 +113,7 @@ export function GolfCourses() {
             <Button href="#contact" variant="primary" size="md">
               Request your itinerary
             </Button>
+            <BookingTrustMicrocopy className="max-w-xl" />
           </div>
         </div>
       </Container>
