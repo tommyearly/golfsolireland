@@ -68,8 +68,8 @@
   --wave-stroke-surface-alt: rgba(26,46,26,0.25);
 
   /* ----- Typography: Fluid mobile-first scale ----- */
-  --font-size-xs: clamp(0.75rem, 0.7rem + 0.2vw, 0.85rem);
-  --font-size-sm: clamp(0.875rem, 0.8rem + 0.3vw, 1rem);
+  --font-size-xs: clamp(0.875rem, 0.82rem + 0.2vw, 0.95rem);
+  --font-size-sm: clamp(1rem, 0.95rem + 0.3vw, 1.1rem);
   --font-size-base: clamp(1rem, 0.95rem + 0.4vw, 1.125rem);
   --font-size-md: clamp(1.0625rem, 1rem + 0.5vw, 1.2rem);
   --font-size-lg: clamp(1.125rem, 1rem + 0.6vw, 1.35rem);
